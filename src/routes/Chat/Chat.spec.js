@@ -7,9 +7,9 @@ describe("Chat Service", () => {
   beforeEach(async () => {
     wrapper = mount(Chat, { propsData: {} });
   });
-  // it("should match the snapshot", () => {
-  //   expect(wrapper.element).toMatchSnapshot();
-  // });
+  it("should match the snapshot", () => {
+    expect(wrapper.element).toMatchSnapshot();
+  });
 
   it("should have a list item for every message in props", () => {
     const shallowWrapper = shallowMount(Chat, {
